@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  align-items: center;
+}
+
+.header-navbar ul {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+.header-navbar li {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+.header-navbar a {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .header-navbar ul {
+    gap: 1.3rem;
+  }
+}
